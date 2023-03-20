@@ -12,23 +12,23 @@
 	$email=$_POST['email'];
 	$sifresi=$_POST['passw'];
 	if($email=="burak@gmail.com"){
-		echo("<h1>Giriş Başarılı Yönlendiriliyorsunuz</h1>");
+		echo("<h1>Login Redirected Successfully</h1>");
 	}
-	else{echo("<h1>hatalı email</h1>");}
+	else{echo("<h1>wrong email</h1>");}
     //bağlanıcağı veri tabanı
 	$baglan = new PDO("mysql:host=localhost;dbname=kayit", "root","");
-	$al=$baglan->prepare("SELECT * FROM kayitli WHERE kadi=?");
+	$al=$baglan->prepare("SELECT * FROM registered WHERE kadi=?");
 	$al->execute(array($email));
 		if($al -> rowCount()){
-			foreach($baglan -> query("SELECT * FROM kayitli WHERE kadi='$email'") as $dogruysadevam){
-				$paswdepola=$dogruysadevam['sifre'];}
+			foreach($baglan -> query("SELECT * FROM registered WHERE kadi='$email'") as $dogruysadevam){
+				$paswdepola=$dogruysadevam['password'];}
 				if($paswdepola==$sifresi){
-					echo("<h1>Giriş Başarılı Yönlendiriliyorsunuz</h1>");
+					echo("<h1>Login Redirected Successfully</h1>");
 					header("refresh:3;url=gidecegiyer.html");
 				}
-				else{echo("<h1>Şifre Yanlış Tekrar Deneyin</h1>");
+				else{echo("<h1>Password Incorrect Try Again</h1>");
 					 header("refresh:3;url=login.html");}
-		}else{echo "<h1>Kullanıcı Bulunamadı Tekrar Deneyiniz</h1>";
+		}else{echo "<h1>User Not Found Try Again</h1>";
 			  header("refresh:3;url=login.html");}
 ?>
 </body>
