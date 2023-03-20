@@ -6,17 +6,17 @@ function kontrolEt() {
   console.log(password);
 
   if (username == "") {
-    uyariBox1.innerHTML = "Kullanıcı adı boş bırakılamaz";
+    uyariBox1.innerHTML = "Username cannot be left blank";
     return false;
   } else {
     uyariBox1.innerHTML = "";
   }
 
   if (password == "") {
-    uyariBox2.innerHTML = "Şifre alanı boş bırakılamaz";
+    uyariBox2.innerHTML = "Password field cannot be left blank";
     return false;
   } else if (password.length < 6) {
-    uyariBox2.innerHTML = "En az 6 karakter girmelisiniz";
+    uyariBox2.innerHTML = "You must enter at least 6 characters";
     return false;
   } else {
     uyariBox2.innerHTML = "";
@@ -27,6 +27,6 @@ function kontrolEt() {
 document.addEventListener("keydown", function (event) {
   if (event.code === "Space") {
     event.preventDefault();
-    alert("Boşluk karakteri kullanamazsınız!");
+    alert("You cannot use a space character!");
   }
 });
