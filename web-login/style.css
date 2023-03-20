@@ -6,13 +6,29 @@
     height: 100vh;
     flex-direction: column;
     font-family: 'Inter UI', sans-serif;
-    background: linear-gradient(#414141,black);
+    background: #005781;
+    
 }
+
 .logo{
     background-image:url(img/logo-en.png);
     height:141px;
     width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+ 
+.foto
+{
+  background-image: url(img/mertyazılım.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
 ::selection {
     background: #2D2F36;
   }
@@ -44,7 +60,7 @@
     }
   }
   .left {
-    background: rgb(0, 0, 0);
+    background:  rgb(0, 0, 0);
     height: calc(100% - 40px);
     top: 20px;
     position: relative;
@@ -74,8 +90,8 @@
     margin: 40px;
   }
   .right {
-    background: #474A59;
-    box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+    background: #75797f;
+    box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
     color: #ffffff;
     position: relative;
     display: flex;
