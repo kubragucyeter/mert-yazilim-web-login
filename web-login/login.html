@@ -9,28 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <header class="foto">  
 <div class="logo"></div>
+
     <div class="page">
+      
         <div class="container">
           <div class="left">
-            <div class="login">Giriş Yap</div>
+            <div class="login">Login</div>
           </div>
+     
           <div class="right">
             <div class="form">
             <form name="Form" method="post" onsubmit="return kontrolEt()" action="kontrol.php">
-              <label for="email">E-Posta</label>
+              <label for="email">E-Mail</label>
               <input class="yazi-alan" type="email" id="email" name="email">
               <label class="uyari" id="email-uyari"></label>
-              <label for="password">Şifre</label>
+              <label for="password">Password</label>
               <input class="yazi-alan" type="password" id="passw" name="passw">
               <label class="uyari" id="sifre-uyari"></label><br>
-              <input type="submit" class="btn" id="submit" value="Giriş Yap">
+              <input type="submit" class="btn" id="submit" value="Login">
             </form>
             </div>
           </div>
         </div>
       </div>
+    
+    </div>
+  
       <script src="script.js"></script>
-
+   <!-- </header> -->
 </body>
 </html>
