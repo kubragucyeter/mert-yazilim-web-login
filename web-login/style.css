@@ -1,3 +1,11 @@
+ 
+.btn-primary
+{
+   background: #00a3eb !important;
+   border-color: #00a3eb !important;
+}
+
+
  body{
     position: relative;
     display: flex;
@@ -6,7 +14,7 @@
     height: 100vh;
     flex-direction: column;
     font-family: 'Inter UI', sans-serif;
-    background: #121212;
+    background: #00a3eb;
     
 }
 
@@ -20,13 +28,17 @@
 }
 
  
-.foto
+/* .foto 
 {
   background-image: url(img/mertyazılım.jpg);
   background-size: cover;
   height: 100%;
   width: 100%;
 }
+*/
+
+
+
 
 
 ::selection {
@@ -59,13 +71,14 @@
       width: 320px;
     }
   }
-  .left {
-    background:  rgb(163, 102, 67, 0.6);
+  /* .left { 
+    background-image: linear-gradient(to left,#fff,#00a3eb);
     height: calc(100% - 40px);
     top: 20px;
     position: relative;
     width: 50%;
   }
+  */
   @media (max-width: 767px) {
     .left {
       height: 100%;
@@ -75,15 +88,16 @@
     }
   }
   .yazi-alan{
-    background-color:  #eae0e0 ;
+    background-color: #00a3eb57;
   }
-  .login {
+  /*.login {
     font-size: 45px;
     font-weight: 900;
     margin: 99px 40px 40px;
-    color: #eae0e0;
+    color: #00a3eb;
     text-align: center;
   }
+  */
   .eula {
     color: #999;
     font-size: 14px;
@@ -91,15 +105,17 @@
     margin: 40px;
   }
   .right {
-    background:  rgba(163, 102, 67, 0.611);
-    box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+     /* background-image: linear-gradient(#00a3eb,#fff,#00a3eb); */
+     background: #fbfff9; 
+    /* box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22); */
     color: #ffffff;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
     justify-content: center;
     align-items: center;
     width: 50%;
+    margin-left: 150px;
   }
 
   path {
@@ -133,30 +149,29 @@
   input::-moz-focus-inner { 
     border: 0; 
   }
-.btn{
+.btn .btn-primary .btn-lg .btn-block{
     color: rgb(43, 64, 66);
     outline: 0;
     border: 1px solid currentcolor;
     transition: 0.3s ease all;
-    background-color:  #fff;
+    background-color:  #00a3eb57;
     font-size: 15px;
     height: 50px;
     padding: 12px 25px;
     display: inline-block;
+    display: flex;
+    flex-direction: center;
 }
-.btn-hover {
-color:#fff;
-border-color: transparent;
-}
-.btn-hover:hover{
-border-color: currentColor; 
-background-color: #252525;
+.btn1 :hover{
+  color: #ffffff;
+  background-color: #000000;
 }
 .uyari{
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 /*.container{
     align-items: center;
     justify-content: center;
