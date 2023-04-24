@@ -161,6 +161,7 @@
     display: inline-block;
     display: flex;
     flex-direction: center;
+    margin-left: 47px;
 }
 .btn1 :hover{
   color: #ffffff;
