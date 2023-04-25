@@ -1,206 +1,173 @@
- 
-.btn-primary
-{
-   background: #00a3eb !important;
-   border-color: #00a3eb !important;
+body {
+    /* background-image: url("anasayfa/img/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-color: #fff;
 }
-
-
- body{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    flex-direction: column;
-    font-family: 'Inter UI', sans-serif;
-    background: #00a3eb;
-    
-}
-
-.logo{
-    background-image:url(img/logo-en.png);
-    height:141px;
-    width: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
- 
-/* .foto 
-{
-  background-image: url(img/mertyazılım.jpg);
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-*/
-
-
-
-
-
-::selection {
-    background: #2D2F36;
-  }
-  ::-webkit-selection {
-    background: #2D2F36;
-  }
-  ::-moz-selection {
-    background: #2D2F36;
-  }
-
-  @media (max-width: 767px) {
-    .page {
-      height: auto;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-    }
-  }
-  .container {
-    display: flex;
-    height: 320px;
-    margin: 0 auto;
-    width: 640px;
-  }
-  @media (max-width: 767px) {
-    .container {
-      flex-direction: column;
-      height: 630px;
-      width: 320px;
-    }
-  }
-  /* .left { 
-    background-image: linear-gradient(to left,#fff,#00a3eb);
-    height: calc(100% - 40px);
-    top: 20px;
-    position: relative;
-    width: 50%;
-  }
-  */
-  @media (max-width: 767px) {
-    .left {
-      height: 100%;
-      left: 20px;
-      width: calc(100% - 40px);
-      max-height: 270px;
-    }
-  }
-  .yazi-alan{
-    background-color: #00a3eb57;
-  }
-  /*.login {
-    font-size: 45px;
-    font-weight: 900;
-    margin: 99px 40px 40px;
-    color: #00a3eb;
-    text-align: center;
-  }
-  */
-  .eula {
-    color: #999;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 40px;
-  }
-  .right {
-     /* background-image: linear-gradient(#00a3eb,#fff,#00a3eb); */
-     background: #fbfff9; 
-    /* box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22); */
-    color: #ffffff;
-    position: relative;
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-left: 150px;
-  }
-
-  path {
-    fill: none;
-    stroke: url(#linearGradient);;
-    stroke-width: 4;
-    stroke-dasharray: 240 1386;
-  }
-  .form {
-    margin: 40px;
-    position: absolute;
-  }
-  label {
-    color:  rgb(188, 188, 188);
-    display: block;
-    font-size: 14px;
-    height: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  input {
-    background: transparent;
-    border: 1px solid rgba(38, 38, 38, 0.4);
-    color: #000000;
-    font-size: 15px;
-    height: 30px;
-    line-height: 30px;
-    outline: none !important;
+header{
+background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(135, 198, 214, 0.685) 100%);
     width: 100%;
-  }
-  input::-moz-focus-inner { 
-    border: 0; 
-  }
-.btn .btn-primary .btn-lg .btn-block{
-    color: rgb(43, 64, 66);
-    outline: 0;
-    border: 1px solid currentcolor;
-    transition: 0.3s ease all;
-    background-color:  #00a3eb57;
-    font-size: 15px;
-    height: 50px;
-    padding: 12px 25px;
-    display: inline-block;
-    display: flex;
-    flex-direction: center;
-    margin-left: 47px;
+    height: 10%;
+    padding: 0.2% 0.3%;
+    box-sizing: border-box;
+    border-bottom:solid;
+    border-color: rgb(69, 115, 153);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.btn1 :hover{
-  color: #ffffff;
-  background-color: #000000;
-}
-.uyari{
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.logo{
+    font-size: 2.5rem;
+    margin-left: 3px;
 }
 
-/*.container{
+.container1{
+    width: 100%;
+    height: 90%;
+}
+.icerikler{
+    width: auto;
+    box-sizing: border-box;
+    height: 100%;
+}
+.icerik{
+    /* background-image: url(../anasayfa/img/bg.jpg); */
+    background-color: #fff;
+    float: left;
+    width: 70%;
+    height: 100%;
+    padding: 5% 5%;
+    box-sizing: border-box;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  */
+   
+
+}
+.duyuru{
+    width: 25%;
+    padding: 1.5% 1.5%;
+    height: 100%;
+    float: right;
+    border-width: 5px;
+    background-color: #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+}
+.gönderi{
+  background-color: rgba(73, 136, 219, 0.418);
+  width: 50%;
+  height: 100%;
+}
+.baslik{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(213, 219, 224);
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
+}
+.duyuru-icerik{
+    background-color: #00a3eb;
+    padding-left: 4%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    border-radius: 15px;
+    border:outset;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.d-icerik{
+    background-color: rgb(243, 244, 245);
+    padding-left: 1.5%;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    width: 90%;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.duyuru-baslik{
+    font-size: 20px;
+   
+    font-weight: bold;
+}
+.nav-link:hover{
+    font-weight: bold;
+    margin-left: 10px;
+    transition: 0.1s;
+}
+.icerik-container{
+    padding: 5%;
+}
+.dyr{
+    display: none;
+}
+nav{
+    background: #00a3eb;
+}
+
+.progress {
+    background:black;
+    justify-content: flex-start;
+    border-radius: 100px;
     align-items: center;
-    justify-content: center;
-    background-color: green;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 90%;
+  }
+  .progressbar{
+    margin-top: 30px;
+  }
+  
+  .dal{
+    color: #000;
+  }
+  .stajyer-adi{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Bree Serif', serif;
+    -webkit-text-fill-color: black;
+  }
+  
+  .progress-value {
+    animation: load 1.5s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+  }
 
-}
-.yazi{
-    font-size: 15px;
-}
-.btn{
-        color: rgb(226, 19, 70);
-        outline: 0;
-        border: 2px solid currentcolor;
-        transition: 0.3s ease all;
-        background-color:    #fff;
-        font-size: 15px;
-        font-weight: 600;
-        padding: 12px 25px;
-        display: inline-block;
-}
-.btn-hover {
-    color:#fff;
-    border-color: transparent;
-    background-color: rgb(226, 19, 70);
-}
-.btn-hover:hover{
-    color:rgb(226, 19, 70);
-    border-color: currentColor; 
-    background-color: #252525;
-} */
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+/* Telefon Ekran*/
+@media(max-width: 1000px) {
+    .duyuru{
+        display: none;
+    }
+    .icerik{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+
+    .progress{
+        width: 95%;
+    }
+
+    .icerikler{
+        margin-left: 0px;
+    }
+    .gönderi{
+        top:auto;
+        left: auto;
+        width: 100%;
+        height: 100%;
+    }
+    .dyr{
+        display:block;
+    }
+    }
